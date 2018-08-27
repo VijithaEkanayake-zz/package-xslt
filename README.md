@@ -24,15 +24,15 @@ import ballerina/io;
 
 function main(string... args) {
     xml input = xml `<catalog>
-	                       <cd>
-	                          <title>Empire Burlesque</title>
-	                          <artist>Bob Dylan</artist>
-	                          <country>USA</country>
-	                          <company>Columbia</company>
-	                          <price>10.90</price>
-	                          <year>1985</year>
-	                       </cd>
-                    </catalog>`;
+	                 <cd>
+	                     <title>Empire Burlesque</title>
+	                     <artist>Bob Dylan</artist>
+	                     <country>USA</country>
+	                     <company>Columbia</company>
+	                     <price>10.90</price>
+	                     <year>1985</year>
+	                  </cd>
+                      </catalog>`;
     xml xsl = xml `<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <xsl:template match="/">
                             <html>
